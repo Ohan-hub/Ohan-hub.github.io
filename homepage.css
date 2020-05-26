@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {background-color: #F2DAB5}
+
+nav ul li a { 	
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em; 	
+  border-radius: .5em; 
+  margin: .25em; 
+  } 
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	background-color:gainsboro; text-decoration: none;
+}
+
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+	color: #fff;
+}
+
+nav ul li {
+    font-size: .8em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	flex: 1 1 50%;
+}
