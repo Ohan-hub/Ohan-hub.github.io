@@ -1,7 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {background-color: #F2DAB5}
+body {background-color: #F2DAB5; text-align: center}
+
+h1{font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; font-weight: 400; text-transform: uppercase; }
 
 nav ul li a { 	
   display: block; 	
