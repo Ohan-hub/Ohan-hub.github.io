@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav ul li a:link, nav ul li a:visited {
+	background-color:gainsboro; text-decoration: none;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+	color: #fff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+    font-size: .8em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	flex: 1 1 50%;
+}
+nav ul li a { 	
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em; 	
+  border-radius: .5em; 
+  margin: .25em; 
+  } 	
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width:53%;
+  padding: 10px;
+	border-radius: .3em;
+   /* Should be removed. Only for demonstration */
+}
+.stats{float: right;
+width: 47%;
+padding: 10px;
+border-radius: .3em;}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+	.stats{width: 100%; }
+}
+
+body {background-image:url("../../ohan-hub photos/pexels-photo-110854.jpg"); background-position: 50% 50%; background-size:cover; margin: 0 10%; font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";} 
+
+h1{font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"; font-weight: 400; text-transform: uppercase; }
+
+aside {
+	background-color: #F6F3ED;
+	padding: 1em;
+
+}
+
+.textwrap{float: left; margin: 10px; max-height: 70%; max-width: 50%; image-orientation: initial; }
+
+footer a{text-decoration: none; display: block; color: black; background-color: antiquewhite;	
+  border: 1px solid; 
+  padding: .5em 1em; 	
+  border-radius: .5em; 
+  margin: .25em; text-align: center;}
+
+.title{border-radius: 6em; text-align: center; border-bottom: 2px solid #F7E584; font-weight: 400; background-color: cornsilk}
+
+@media screen and (min-width: 400px) { nav ul li { flex: none; } nav ul { justify-content: center; }}
+
+@media screen and (min-width: 480px) { .textwrap { float: left; margin: 0 1em 1em 0; }}
+
+@media screen and (min-width: 940px){ aside { grid-area: stats; background-color: #F6F3ED left top; padding: 1em; padding-left: 45px; } }
